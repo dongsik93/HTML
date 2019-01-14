@@ -1,0 +1,120 @@
+<!DOCTYPE html>  <!-- html 타입 선언-->
+<html>
+    <head>
+        <title>나의 첫 html</title>  <!-- 이 정보는 탭에 표시됨-->  <!-- 탭의 그림은 ico bavicon이다-->
+        <meta charset="UTF-8"> <!-- 인코딩 -->
+        <link rel="shortcut icon" href="./image/ben-favicon.png"> <!-- 현재폴더에있는 ben-favicon을 탭의 이미지가 바뀜 -->
+        <style>
+            h1 {
+                color:rgb(265, 76, 129);
+            }
+            h2 {
+                color:rgb(235, 76, 129);
+            }
+            h3 {
+                color:rgb(201, 66, 111);
+            }
+            h4 {
+                color:rgb(170, 76, 129);
+            }
+            h5 {
+                color:rgb(160, 76, 129);
+            }
+            h6 {
+                color:rgb(150, 76, 129);
+            }
+        </style>
+        <!-- <script>
+            document.addEventListener('click',function(){   
+                alert("클릭!!!")
+            })
+        </script> -->
+    </head>
+
+    <body> <!-- 사용자에게 보여줄 것들이 들어감 -->
+        <!-- <h1>안녕하세요 저는 문동식 입니다ㅎ_ㅎ</h1>
+        <h2>多少钱</h2> -->
+        <h1>제목을 나타냅니다 ! !</h1>
+        <h2>다음 더 작은 제목</h2>
+        <h3>더더 작은 제목</h3>
+        <h4>더더더 작은 제목</h4>
+        <h5>더더더더 작은 제목</h5>
+        <!-- 한 문서에 하나의 아이디만 존재해야 함 -->
+        <h6 id="small-title">더더더더더 작은 제목</h6>
+
+        <!-- 글자 형태 태그 -->
+        <!-- b태그는 가운데 들어가는 글자를 bold처리 해줌 / 논 시멘틱 요소-->
+        이건<b>어떻게</b>들어가는 거지?
+        <!-- p태그는 보통 문장이 들어감 -->
+        <p>이 안에는 <b>문장</b>이 들어갑니다.</p>
+        <!-- strong은 seo에서 코드를 보기 때문에 b보다는 strong이 더 중요하다고 생각 / 시멘틱 요소-->
+        <p>이 안에는 <strong>문장</strong>이 들어갑니다.</p>
+        <!-- i태그는 기울이기 / 논시맨틱 요소-->
+        <p>이 안에는 <strong><i>문장</i></strong>이 들어갑니다.</p>
+        <!-- em태그는 i태그와 똑같지만 시맨틱 요소이다  -->
+        <p>이 안에는 <strong><em>문장</em></strong>이 들어갑니다.</p>
+        <!-- small태그는 글씨를 작게 -->
+        <p>또다른 <small>내용은</small> 무엇이냐!!!</p>
+        <!-- mark태그는 하이라이팅 -->
+        <p>이거이거는 <mark>진짜</mark>로 중요해!!!</p>
+        <!-- del태그는 삭선이들어감  -->
+        <p>이거이거는 <mark><del>진짜</del></mark>로 중요해!!!</p>
+        <!-- ins태그는 밑줄이 들어감 -->
+        <p>이거이거는 <mark><del>진짜</del></mark>로 <ins>중요</ins>해!!!</p>
+        <!-- sup(supterscripted) :위첨자 // sub(subscripted) : 아래첨자-->
+        <p>위로 <sup>고고</sup>아래로 <sub>고고</sub></p>
+        <!-- br은 엔터 / 공간을 늘릴때는 br을 사용하면 안됨 -->
+        <br>
+        <!-- hr태그는 수평선을 그어줌  -->
+        <hr>
+        <!-- pre태그는 공백, 아무거나 입력한 만큼 그대로 출력해주는 / 독스트링과 느낌이 비슷  -->
+        <pre>
+            print("hello")
+            for i in h:
+                print(i)
+        </pre>
+        <!-- q태그는 " "를 표시해줌 -->
+        <q>인용문</q>
+        <br>
+        <!-- a태그는 하이퍼텍스트 href=를 통해 하이퍼링크를 표현 -->
+        <!-- href = hypertext reference : 어디를 참조해야할지에 대한 !-->
+        <a href="https://google.com">google ^_^</a>
+        <br>
+        <!-- target을 주게되면 새 탭에 나옴 -->
+        <a href="https://naver.com" target="_blank">네이버 !!</a>
+
+        <!-- 리스트 -->
+        <!-- 순서가 없는 ul 리스트 안에는 각각의 리스트가 들어갈 수 있음-->
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>수박</li>
+        </ul>
+        <!-- 순서가 있는 ol 리스트 안에 각각의 리스트 -->
+        <!-- 순서 시작을 설정할 수 있음 -->
+        <ol start="50">
+            <li>첫째
+                <ul>첫째-1</ul>
+                <ul>첫째-2</ul>
+            </li>
+            <li>둘째</li>
+            <li>셋째</li>
+        </ol>
+        <!-- 저장된 small-title로 이동함 -->
+        <!-- 링크는 절대 / 상대경로 , 특정 id를 타게팅해서 같은 문서의 위치로 이동이 가능 -->
+        <a href="#small-title">작은제목</a>
+        <!-- 클릭하면 자동으로 메일을 보내줌 -->
+        <a href="mailto:ehdtlr9376@naver.com">메일</a>
+        
+        <!-- img태그 -->
+        <!-- alt를 통해 x박스가 떠도 사진에 대한 설명 -->
+        <!-- width와 height를 pixcel단위로 조정 -->
+        <img src="./ben.jpg" alt="벤:)" width="130" height="150">
+        <!-- mp3파일을 넣게되면 들어감  -->
+        <audio src="경로">뮤직</audio>
+        <!-- video를 이용해 저장되어있던 mp4를 저장할 수 있다 -->
+        <video width="200" height="200">
+            <source src="https://www.youtube.com/watch?v=sMtaHnBxGxM" type="video/web" ==0$>
+        </video>
+    </body>
+</html>
