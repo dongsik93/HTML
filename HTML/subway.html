@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>서브웨이 초보자를 위한 주문서^_^</title><img src="./image/subway.png" alt="subway :)" width="250" height="150">
+    <style>
+        h1 {
+            color : green
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:gold">SUBWAY FORM</h1>
+    <p>주문서를 작성해 주세요 :)</p>
+    <!-- 한번에 전송할 내용은 form태그에 한번에 묶기 -->
+    <form action="/order">
+        <!-- placeholer : 글씨입력 전 회색글자 -->
+        이름     : <input type="text" placeholder="이름을 입력해줘" name="peopel">
+        <br><br>
+        비밀번호 : <input type="password">
+        <br><br>
+        날짜     : <input type="date" name="date">
+        <h3>1. 샌드위치 선택</h3>
+        <!-- name 값 = 전송하려면 name값을 다 줘야됨 // value 값 = 값을 전달함, 오른쪽 텍스트가아닌 value가 전송 -->
+        <!-- sandwich = 3 이라는 값이 담아서 보내짐 -->
+        <input type="radio" name="sandwich" value="1"> 에그마요<br>
+        <input type="radio" name="sandwich" value="2"> 이탈리안 비엘티<br>
+        <input type="radio" name="sandwich" value="3"> 터키 베이컨 아보카도<br>
+        <input type="radio" name="sandwich" value="미트볼"> 미트볼<br>
+        <hr>
+        <h3>2. 사이즈 선택</h3>
+        <input type="number" name="size" min="15" max="30" step="15">
+        <hr>
+        <h3>3. 빵 선택</h3>
+        <select name="bread">
+            <!-- selected : 선택 초기화면 보여주기 -->
+            <!-- disabled : 재고소진시 선택 안되게 하기 위해 -->
+            <option value="1">허니오트</option>
+            <option value="2">플랫브레드</option>
+            <option value="3" selected>하티</option>
+            <option value="4" disabled>식빵</option>
+        </select>
+        <hr>
+        <h3>4. 야채 / 소스</h3>
+        <!-- checked :기본으로 체크설정 -->
+        <input type="checkbox" name="option" value="1" checked> 토마토<br>
+        <input type="checkbox" name="option" value="2" disabled> 오이<br>
+        <input type="checkbox" name="option" value="3"> 할라피뇨<br>
+        <input type="checkbox" name="option" value="4"> 바베큐소스<br>
+        <input type="checkbox" name="option" value="5"> 렌치<br>
+        <br><input type="submit">
+        <hr>
+        <a href="https://ssafy.com">ssafy ^_^<input type="button" name="ssafy"></a>
+    </form>
+</body>
+</html>

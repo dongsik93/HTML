@@ -1,0 +1,39 @@
+/* (*) 전체선택자 : 연산자는 모두 선택 */
+* {
+    color : red;
+}
+
+/* 태그선택자 : 태그만 선택해서 바꿔줘 */
+h1 {
+    color : rosybrown;
+}
+
+/* (.) : 클래스 선택자   */
+.blue { 
+    color : blue;
+}
+
+/* (#) : 아이디 선택자   */
+#green {
+    color : green;
+}
+
+.pink {
+    color : pink;
+}
+
+.bold {
+    font-weight : bold;
+}
+
+h5 {
+    width : 50%;
+}
+div {
+    width : 50%;
+}
+
+h4 {
+    color : #ffff00;
+}
+

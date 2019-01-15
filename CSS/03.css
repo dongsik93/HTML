@@ -1,0 +1,61 @@
+div {
+    background-color: pink;
+    width:100px;
+    height:100px;
+}
+
+.square {
+    /* margin-top: 30px; */
+    margin: 30px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius:30px
+}
+
+.parent {
+    background-color: gray;
+    margin: 100px;
+    /* position: relative; */
+}
+/* 부모를 기준으로 옮김 */
+.relative-box {
+    position: relative;
+    top : 50px; 
+    left: 50px;
+    background-color: navy;
+    color: white;
+}
+/* 부모가 아무것도 설정되어있지 않으면 (20line) 어디에 존재 하던지 간에 
+    맨 상위 document를 보고 움직임 */
+.absolute-box {
+    position: absolute;
+    top:150px;
+    left:150px;
+    background-color: brown;
+}
+/* 현재 페이지를 기준으로 위치를 조정 */
+.fixed-box{
+    position: fixed;
+    background-color: black;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 15px;
+    color: white;
+}
+
+.z-index-1 {
+    z-index: 3;
+    background-color: yellow;
+    top: 10px;
+    left: 10px;
+}
+
+.z-index-2 {
+    z-index: 7;
+    background-color: chocolate;
+    top: 20px;
+    left: 20px;
+}

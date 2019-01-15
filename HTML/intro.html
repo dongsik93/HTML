@@ -4,24 +4,22 @@
         <title>나의 첫 html</title>  <!-- 이 정보는 탭에 표시됨-->  <!-- 탭의 그림은 ico bavicon이다-->
         <meta charset="UTF-8"> <!-- 인코딩 -->
         <link rel="shortcut icon" href="./image/ben-favicon.png"> <!-- 현재폴더에있는 ben-favicon을 탭의 이미지가 바뀜 -->
+        <link rel="stylesheet" href="mystyle.css">
         <style>
             h1 {
                 color:rgb(265, 76, 129);
             }
             h2 {
                 color:rgb(235, 76, 129);
+                font-family:cursive;
             }
-            h3 {
-                color:rgb(201, 66, 111);
+            
+            table, td {
+                border: 1px solid red
             }
-            h4 {
-                color:rgb(170, 76, 129);
-            }
-            h5 {
-                color:rgb(160, 76, 129);
-            }
-            h6 {
-                color:rgb(150, 76, 129);
+            table {
+                margin-left: auto;
+                margin-right: auto;
             }
         </style>
         <!-- <script>
@@ -34,7 +32,7 @@
     <body> <!-- 사용자에게 보여줄 것들이 들어감 -->
         <!-- <h1>안녕하세요 저는 문동식 입니다ㅎ_ㅎ</h1>
         <h2>多少钱</h2> -->
-        <h1>제목을 나타냅니다 ! !</h1>
+        <h1 style="color:red;font-family:cursive">제목을 나타냅니다 ! !</h1>
         <h2>다음 더 작은 제목</h2>
         <h3>더더 작은 제목</h3>
         <h4>더더더 작은 제목</h4>
@@ -116,5 +114,120 @@
         <video width="200" height="200">
             <source src="https://www.youtube.com/watch?v=sMtaHnBxGxM" type="video/web" ==0$>
         </video>
+        <br>
+        <br>
+        <!-- talbe태그 -->
+        <!-- th : 테이블 헤드-->
+        <!-- tr : 테이블 로우-->
+        <!-- td : 테이블 데이터? -->
+        <!-- 테두리 : border 를 style에 적용 -->
+        <!-- colspan : 가로로 셀병합 -->
+        <!-- rowspan : 세로, 만들때는 밑에 tr태그 하나가 필요 -->
+        <!-- 각각의 셀에 하고싶으면  td태그안에 style="border:1px solid red" -->
+        <table>
+            <tr>
+                <th>이름</th>
+                <th>이메일</th>
+                <th>github</th>
+            </tr>
+            <tr>
+                <td>토마스</td>
+                <td>tomas@gmail.com</td>
+                <td>tomato</td>
+            </tr>
+            <tr>
+                <td>제임스</td>
+                <td>james@gmail.com</td>
+                <td>james</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">문동식</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>a</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th colspan="4">점심메뉴</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+            </tr>
+            <tr>
+                <td>중식</td>
+                <td>짜장면</td>
+                <td>볶음밥</td>
+                <td>짬뽕</td>
+            </tr>
+            <tr>
+                <td>양식</td>
+                <td>돈가스</td>
+                <td>리조또</td>
+                <td>파스타</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>TIME</th>
+                <th>INDOOR</th>
+                <th colspan="2">OUTDOOR</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>소극장</td>
+                <td>잔디마당</td>
+                <td>대공연장</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td rowspan="2">안녕하신가영</td>
+                <td></td>
+                <td>10cm</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td rowspan="2">선우정아</td>
+                <td rowspan="2">참깨와 솜사탕</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td>크러쉬</td>
+                <td></td>
+                <td>폴킴</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+        <!-- form태그 : 사용자가 입력할 수 있는 데이터 틀이 들어감 -->
+        <!-- 검색창이나, id, 비밀번호 등등등  -->
+        <form>
+            <!-- input쓰고 탭누르면 자동완성 -->
+            <!-- text말고 다른게 들어갈 수 있는게 엄청 많다 -->
+            <!-- <input type="button">
+            <input type="checkbox">
+            <input type="date">
+            <input type="email"> -->
+            <!-- submit = 제출버튼 누르면 전송 , value값으로 이름 변경 가능-->
+            
+            <input type="submit" value="보내주기">
+        </form>
+
+
+
+
     </body>
 </html>
